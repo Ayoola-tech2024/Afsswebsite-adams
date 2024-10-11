@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <link rel="stylesheet" href="properties of everthing.css" />
+  <style>
+    nav img{
+      margin-left: 25px;
+    }
+    #indicator {
+      display: none;
+    }
+  </style>
+  <body>
+    <nav>
+      <a class="school-logo" href="index.html"
+        ><img src="1688073295038-removebg-preview.png"
+      /></a>
+      <div class="nav-links" id="navLinks">
+        <img class="cancel" onclick="hideMenu()" src="Cancel button.JPG" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="Set 2024.html">Elite Class '24 &reg;</a></li>
+          <li><a href="Developer.html">Developer</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </div>
+      <img class="menu" onclick="showMenu()" src="menu_8872262.png" />
+    </nav>
+    <div class="form-container">
+      <div class="form-button">
+        <span onclick="login()">Login</span>
+        <span onclick="register()">Create account</span>
+        <hr id="indicator" />
+      </div>
+      <form
+        id="LoginForm"
+        action="mailto:damisileayoola@gmail.com"
+        method="post"
+      >
+        <input type="text" placeholder="Username" required name="username" />
+        <input
+          type="password"
+          required
+          placeholder="Password"
+          name="password"
+        />
+        <button type="submit" class="button">Login</button>
+        <a href="" class="forgot-password">Forgot Password</a>
+      </form>
+      <form id="RegisterForm">
+        <input type="text" required placeholder="Username" name="username" />
+        <input type="email" required placeholder="Email" name="email" />
+        <input
+          type="password"
+          required
+          placeholder="Password"
+          name="password"
+        />
+        <button type="submit" value="send" class="button">
+          Create an Account
+        </button>
+      </form>
+    </div>
+  </body>
+  <!---------js for toggle form------------->
+
+  <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegisterForm = document.getElementById("RegisterForm");
+
+    function register() {
+      LoginForm.style.transform = "translateX(0px)";
+      RegisterForm.style.transform = "translateX(0px)";
+      indicator.style.transform = "translateX(85px)";
+    }
+
+    function login() {
+      LoginForm.style.transform = "translateX(400px)";
+      RegisterForm.style.transform = "translateX(400px)";
+      indicator.style.transform = "translateX(-85px)";
+    }
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-500px";
+    }
+  </script>
+</html>

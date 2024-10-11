@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostolic Faith secondary School Ado-ekiti </title>
+    <link rel="stylesheet" href="properties of everthing.css">
+    <meta name="description" content="We prepare our Students with a cimmitment to academic achievement , and moral development
+    , we prepare or students to excel in their pursuits and contribute positively to the societyLET THE LIGHT SHINE">
+</head>
+<style>
+        .title{
+            display: inline-block;
+            font-family: fantasy;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        p{
+            color: greenyellow;
+        }
+        @media (max-width: 700px){
+            body{
+                background-position: 0;
+                background-repeat: no-repeat;
+            }
+            .text-box-1 h1{
+                font-size: 18px;
+            }
+        }
+        .title::after{
+            content: '';
+            border-radius: 5px;
+            height: 3px;
+            background : radial-gradient(white, red);
+            display: block;
+            font-size: 15px;
+            margin: auto;
+        }
+        .text-box-1 h1{
+            color: blue;
+        }
+        .developer{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        body{
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient( rgba(34, 34, 85, 0.623), rgb(51, 51, 80)), url(Screenshot\ \(108\).png), url(.//Adams\ romeo.jpg);
+            background-size: cover;
+            position: relative;
+        }
+        .image{
+            height: 250px;
+            width: 250px;
+            object-fit: cover;
+            border-radius: 500px;
+            transition: all 1s ease;
+        }
+        .image:hover{
+            filter: grayscale(50%);
+        }
+        .text{
+            font-family: cursive;
+            font: lighter;
+            display: inline-block;
+            color: whitesmoke;
+            margin-left: 3px;
+            font-size: 15px;
+        }
+        #end{
+            margin-left: 150px;
+        }
+    </style>
+    <link rel="stylesheet" href="properties of everthing.css">
+<body>
+<div class="header-1">
+    <div class="develop">
+        <nav>
+           <img src="developers's logo.JPG">
+            <div class="nav-links" id="navLinks">
+                <img class="cancel" onclick="hideMenu()" src="Cancel button.JPG" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    <li><a href="Set 2024.html">Set 2024&reg;</a></li>
+                    <li><a href="#">Developer</li>
+                    <li><a href="Login-page.html">Accounts</a></li>
+                </ul>
+            </div>
+            <img class="menu" onclick="showMenu()" src="menu_8872262.png">
+
+            
+        </nav>
+            </div>
+<div class="text-box-1">
+    <img class="image" src="phil.jpg" alt="The developer">
+    <h1> ADAMS DEVELOPERS </h1>
+    <p>In this constantly changing smart world, develop your dreams into reality, Never be left behind, move on as the world does too!!<br>(DEVELOPING THE IMPOSSIBLE)</p>
+    <div class="contact">
+        <a id="top" href="mailto:damisileayoola@gmail.com"><button class="button-1">Contact the Developer now &#8594;</button></a>
+    </div>
+</div>
+
+</div>
+
+    <!--------javacript for toggle menu--------->
+<script defer>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>

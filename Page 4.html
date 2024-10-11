@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set 2024</title>
+    <style>
+        .title{
+            display: inline-block;
+            font-family: fantasy;
+            color: black;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+        .title::after{
+            content: '';;
+            border-radius: 5px;
+            height: 3px;
+            background: radial-gradient(blue, red);
+            display: block;
+            margin: auto;
+        }
+        body{
+            background-position: center;
+            background-size: cover;
+        }
+        .automatical_changer{
+            margin: 10px;
+            align-self: center;
+            border-radius: 8px;
+        }
+        .text{
+            font-family: cursive;
+            font: bolder;
+            display: inline-block;
+            color: whitesmoke;
+            margin-left: 3px;
+            font-size: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="properties of everthing.css">
+</head>
+<body>
+    <!-------------Navbar and header----------------->
+       <nav>
+            <a class="school-logo" href="index.html">
+                <img src="1688073295038-removebg-preview.png">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <img class="cancel" onclick="hideMenu()" src="Cancel button.JPG" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    <li><a href="Set 2024.html">Elite Class '24 &reg;</a></li>
+                    <li><a href="Developer.html">Developer</a></li>
+                    <li><a href="Login-page.html">Accounts</a></li>
+                </ul>
+            </div>
+            <img class="menu" onclick="showMenu()" src="menu_8872262.png">
+        </nav>
+<header>
+    <section class="outgoing-student">
+        <h1 >Outgoing Students</h1>
+        <p>A short overview of the outgoing 2023/24 set</p>
+    </section>
+    <!-------------Continuatiom of details from page 4----------------->
+<div class="pictures-2">
+    <div class="row">
+        <div class="col-4" id="card">
+            <img src="tirin.jpg">
+            <span class="title">Name: </span> <span class="text">Adegbuyiro Ademola</span> <br>
+            <span class="title">Department: </span><span class="text">Art</span> <br>
+            <span class="title">Post Held:</span><span class="text">Null</span> <br>
+            <span class="title">Nickname: </span><span class="text">Ademighty </span> <br>
+            <span class="title">Contact Info:- </span><span class="text">07062289773</span> 
+        </div>
+        <div class="col-4" id="card">
+            <img src="seyi.jpg">
+            <span class="title">Name: </span> <span class="text">Adesunloro Oluwaseyi</span> <br>
+            <span class="title">Department: </span><span class="text">Science</span> <br>
+            <span class="title">Post Held:</span><span class="text">Null</span> <br>
+            <span class="title">Nickname: </span><span class="text">Shao</span> <br>
+            <span class="title">Contact Info:- </span><span class="text">07071330585</span> 
+        </div>
+        <div class="col-4" id="card">
+            <img src="Afolabi.jpg">
+            <span class="title">Name: </span> <span class="text">Akinwumi Afolabi</span> <br>
+            <span class="title">Department: </span><span class="text">Science</span> <br>
+            <span class="title">Post Held:</span><span class="text">Null</span> <br>
+            <span class="title">Nickname: </span><span class="text">Larbie</span> <br>
+            <span class="title">Contact Info:- </span><span class="text">...</span>  <br>
+        </div>
+        <!-------------Juniors----------------->
+        <section class="outgoing-student">
+            <h1>Set 2024/25 Prefects</h1>
+        </section>
+        <div class="col-4" id="card">
+            <img src="1688073295038-removebg-preview.png">
+            <span class="title">Name: </span> <span class="text">Afolabi Taiwo</span> <br>
+            <span class="title">Department: </span><span class="text">Science</span> <br>
+            <span class="title">Post Held:</span><span class="text">Head Boy </span> <br>
+        </div>
+        <div class="col-4" id="card">
+            <img src="1688073295038-removebg-preview.png">
+            <span class="title">Name: </span> <span class="text">Akinola Favour</span> <br>
+            <span class="title">Department: </span><span class="text">Art</span> <br>
+            <span class="title">Post Held:</span><span class="text">Head Girl</span> <br>
+        </div>
+        <div class="col-4" id="card">
+            <img src="1688073295038-removebg-preview.png">
+            <span class="title">Name: </span> <span class="text">Ogunleye Ilerioluwa</span> <br>
+            <span class="title">Department: </span><span class="text">Science</span> <br>
+            <span class="title">Post Held:</span><span class="text">Asst. Head Boy</span> <br>
+        </div>
+        <div class="col-4" id="card">
+            <img src="1688073295038-removebg-preview.png">
+            <span class="title">Name: </span> <span class="text">Akinjobi God's-peace </span> <br>
+            <span class="title">Department: </span><span class="text">Art</span> <br>
+            <span class="title">Post Held:</span><span class="text">Asst. Head girl</span> <br>
+        </div>
+
+
+    <!--------Automatic Image Changer--------->
+
+    <style> 
+        .carousel { 
+            width: 600px; 
+            height: 600px;
+            overflow: hidden; 
+            position: relative; 
+        } 
+    
+        .carousel img { 
+          position: absolute; 
+          top: 20px;
+          object-fit: cover; 
+          left: 20px; 
+          width: 100%;
+          opacity: 0; 
+          animation: carousel 15s infinite linear; 
+        } 
+     
+        .carousel img:nth-child(1) { 
+          animation-delay: 0s; 
+        } 
+     
+        .carousel img:nth-child(2) { 
+          animation-delay: 4s; 
+        } 
+     
+        .carousel img:nth-child(3) { 
+          animation-delay: 8s; 
+        } 
+    
+        .carousel img:nth-child(4) { 
+          animation-delay: 12s; 
+        } 
+    
+        .carousel img:nth-child(5) { 
+          animation-delay: 16s; 
+        } 
+
+        .carousel img:nth-child(8) { 
+          animation-delay: 20s; 
+        }
+        
+        .carousel img:nth-child(9) { 
+          animation-delay: 24s; 
+        } 
+
+        .carousel img:nth-child(10) { 
+          animation-delay: 28s; 
+        } 
+
+        .carousel img:nth-child(11) { 
+          animation-delay: 32s; 
+        } 
+
+        .carousel img:nth-child(12) { 
+          animation-delay: 36s; 
+        } 
+        @media (max-width: 700px){
+            .carousel{
+                width: 350px;
+                height: 350px;
+            }
+        }
+     
+        @keyframes carousel { 
+          0% { 
+            opacity: 0; 
+          } 
+          20% { 
+            opacity: 1; 
+          } 
+          33.33% { 
+            opacity: 1; 
+          } 
+          53.33% { 
+            opacity: 0; 
+          } 
+          100% { 
+            opacity: 0; 
+          } 
+        } 
+      </style> 
+    </head> 
+    <body>
+        <div>
+        </section>
+        <div class="carousel"> 
+          <img src="Image 1.jpg" width="90%"> 
+          <img src="Image 2.jpg" width="90%"> 
+          <img src="Image 3.jpg" width="90%"> 
+          <img src="Image 4.jpg" width="90%">
+          <img src="Image 5.jpg" width="90%">    
+          <img src="Image 8.jpg" width="90%">
+          <img src="Image 9.jpg" width="90%">
+          <img src="Image 10.jpg" width="90%">
+          <img src="Image 11.jpg" width="90%">
+          <img src="Image 12.jpg" width="90%">          
+        </div> 
+        </div> 
+
+<!-------------Navigation buttons ----------------->
+
+        <div class="page-btn">
+          
+    <a href="Set 2024.html"><button class="button-1">1</button></a>
+    <a href="Page 2.html"><button class="button-1">2</button></a>
+    <a href="Page 3 .html"><button class="button-1">3</button></a> 
+    <a href="#"><button class="button-1">4</button></a></a>
+          <a href="#"><button class="button-1">Back to top</button></a>
+        </div>
+    </body>
+    
+<!--------javacript for toggle menu--------->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-500px";
+    }
+</script>
+
+
+    </html>
