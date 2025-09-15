@@ -15,6 +15,13 @@ li{
     position: relative;
     background-image: linear-gradient(rgb(69, 69, 124), rgba(40, 40, 92, 0.623)), url(Image.jpg);
 } 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
 .font{
     font-family: fantasy;
 }
@@ -572,4 +579,5 @@ input::placeholder{
 .middle-logo img{
     align-self: center;
     width: 125px;
+
 }
