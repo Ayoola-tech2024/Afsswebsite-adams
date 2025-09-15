@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
- font-family: 'Montserrat', sans-serif;
 } 
 a{
     text-decoration: none;
@@ -16,10 +15,6 @@ li{
     position: relative;
     background-image: linear-gradient(rgb(69, 69, 124), rgba(40, 40, 92, 0.623)), url(Image.jpg);
 } 
-body {
-    overflow: hidden;
-}
-
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
@@ -582,4 +577,5 @@ input::placeholder{
     width: 125px;
 
 }
+
 
