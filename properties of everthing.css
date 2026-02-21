@@ -1,7 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 } 
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -48,10 +53,18 @@ button{
 nav img{
     width: 100px;
     margin-left: 25px;
+    max-width: 100%;
 }
 .nav-links{
     flex: 1; 
     text-align: right;
+}
+.nav-links ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
 }
 p{
     font-family: cursive;
@@ -228,6 +241,13 @@ marquee{
     animation-timing-function: linear;
 }
 @media (max-width: 700px){
+    nav{
+        padding: 14px 18px;
+    }
+    nav img{
+        width: 82px;
+        margin-left: 0;
+    }
     .row{
         flex-direction: column;
     }
@@ -238,9 +258,11 @@ marquee{
     }
     .nav-links ul li{
         display: block;
+        padding: 10px 0;
     }
     .nav-links ul li a{
         color: white;
+        font-size: 17px;
     }
     .nav-links ul li:hover::after{
         width: 100%;
@@ -258,14 +280,20 @@ marquee{
     .nav-links{
         position: absolute;
         height: 100vh;
-        width: 200px;
+        width: min(78vw, 280px);
         margin-left: 0;
-        background: rgb(65, 53, 177);
+        padding: 24px 18px;
+        background: linear-gradient(180deg, rgb(42, 56, 157), rgb(20, 28, 97));
         top: 0px;
-        right: -500px;
+        right: -100%;
         text-align: left;
         z-index: 2;
-        transition: all 1s ease-in-out;
+        box-shadow: -8px 0 25px rgba(0, 0, 0, 0.35);
+        transition: right 0.35s ease-in-out;
+    }
+    .nav-links ul{
+        display: block;
+        margin-top: 24px;
     }
     .pictures-2{
         position: relative;
