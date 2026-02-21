@@ -240,7 +240,10 @@ abbr{
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
-    background-image: conic-gradient(rgb(88, 36, 36), blue, red);
+    background: #ffffff;
+    border: 1px solid #1d4f91;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 .col-4 img{
     width: 100%;
