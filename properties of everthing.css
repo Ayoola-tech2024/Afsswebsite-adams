@@ -203,17 +203,10 @@ abbr{
     cursor: pointer;
     transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
-.nav-toggle span{
-    display: block;
-    width: 20px;
-    height: 2.5px;
-    border-radius: 999px;
-    background: #ffffff;
-    transition: all 0.25s ease-in-out;
-    margin: 0 auto;
-}
-.nav-open span + span{
-    margin-top: 4px;
+.nav-toggle i{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
 }
 .nav-toggle:hover{
     transform: translateY(-1px);
@@ -223,16 +216,6 @@ abbr{
 .nav-close{
     margin-left: auto;
     background: rgba(255, 255, 255, 0.2);
-}
-.nav-close span{
-    margin-top: 0;
-}
-.nav-close span:first-child{
-    transform: rotate(45deg) translateY(1px);
-}
-.nav-close span:last-child{
-    transform: rotate(-45deg) translateY(-2px);
-    margin-top: -3px;
 }
 #card .text{
     font-size: 15px;
@@ -660,4 +643,3 @@ input::placeholder{
     width: 125px;
 
 }
-
