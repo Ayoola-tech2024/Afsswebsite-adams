@@ -47,7 +47,9 @@
                 <img src="1688073295038-removebg-preview.png">
             </a>
             <div class="nav-links" id="navLinks">
-                <img class="cancel" onclick="hideMenu()" src="Cancel button.JPG" >
+                <button class="nav-toggle nav-close" onclick="hideMenu()" aria-label="Close navigation menu">
+            <span></span><span></span>
+            </button>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about us.html">About</a></li>
@@ -56,7 +58,9 @@
                     <li><a href="Login-page.html">Accounts</a></li>
                 </ul>
             </div>
-            <img class="menu" onclick="showMenu()" src="menu_8872262.png">
+            <button class="nav-toggle nav-open" onclick="showMenu()" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         </nav>
 <header>
     <section class="outgoing-student">
@@ -132,10 +136,18 @@
     var navLinks = document.getElementById("navLinks");
 
     function showMenu(){
-        navLinks.style.right = "0";
+        navLinks.classList.add("is-open");
+        var menuButton = document.querySelector(".nav-open");
+        if (menuButton) {
+            menuButton.setAttribute("aria-expanded", "true");
+        }
     }
     function hideMenu(){
-        navLinks.style.right = "-100%";
+        navLinks.classList.remove("is-open");
+        var menuButton = document.querySelector(".nav-open");
+        if (menuButton) {
+            menuButton.setAttribute("aria-expanded", "false");
+        }
     }
 </script>
 

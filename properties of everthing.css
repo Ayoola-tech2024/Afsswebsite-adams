@@ -190,27 +190,42 @@ abbr{
     margin: 10px 0 20px;
     font-size: 14px;
 }
-.cancel{
-    width: 25px;
-    right: 25px;
+.nav-toggle{
     display: none;
+    border: 0;
+    background: transparent;
+    padding: 6px;
+    cursor: pointer;
+}
+.nav-toggle span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 999px;
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+.nav-open span + span{
+    margin-top: 5px;
+}
+.nav-close{
+    margin-left: auto;
+}
+.nav-close span{
+    margin-top: 0;
+}
+.nav-close span:first-child{
+    transform: rotate(45deg) translateY(1px);
+}
+.nav-close span:last-child{
+    transform: rotate(-45deg) translateY(-1px);
+    margin-top: -2px;
 }
 #card .text{
     font-size: 15px;
 }
 #card .title{
     font-size: 13px;
-}
-.menu{
-    width: 25px;
-    display: none;
-}
-.menu{
-    transition: all 0.5s ease-in-out;
-}
-.menu:hover{
-    opacity: 0.3;   
-    box-shadow: 0 0 20px 0 blue;
 }
 .school-logo:hover{
     filter: grayscale(100%);
@@ -278,18 +293,28 @@ marquee{
         margin-left: 150px;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         height: 100vh;
         width: min(78vw, 280px);
         margin-left: 0;
         padding: 24px 18px;
         background: linear-gradient(180deg, rgb(42, 56, 157), rgb(20, 28, 97));
-        top: 0px;
-        right: -100%;
+        top: 0;
+        right: 0;
         text-align: left;
-        z-index: 2;
+        z-index: 20;
         box-shadow: -8px 0 25px rgba(0, 0, 0, 0.35);
-        transition: right 0.35s ease-in-out;
+        transform: translateX(110%);
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        transition: transform 0.35s ease-in-out, opacity 0.25s ease-in-out;
+    }
+    .nav-links.is-open{
+        transform: translateX(0);
+        visibility: visible;
+        pointer-events: auto;
+        opacity: 1;
     }
     .nav-links ul{
         display: block;
@@ -302,18 +327,10 @@ marquee{
         font-size: 62px;
         color:  black;
     }
-    .menu{
-        width: 25px;
-        display: block;
-        cursor: pointer;
-    }
-    .cancel{
-        width: 25px;
-        display: block;
-        cursor: pointer;
-        margin: 10px;
-        font-size: 22px;
-        color: white;
+        .nav-toggle{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
     .col-4{
         align-self: center;
