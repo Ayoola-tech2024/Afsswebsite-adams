@@ -1,119 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-----------The developer is Ayoola damisile (Adams Digitals)-------------------->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AFSS ADO-EKITI &copy; 2024 </title>
+    <meta name="description" content="Apostolic Faith Secondary School (AFSS) Ado-Ekiti - Nurturing the Intellect and Spirit, guiding students towards a bright future grounded in Faith and integrity. LET THE LIGHT SHINE">
+    <meta name="keywords" content="AFSS, Apostolic Faith Secondary School, Ado-Ekiti, secondary school, education, Nigeria">
+    <meta name="author" content="Ayoola Damisile (Adams Digitals)">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="AFSS Ado-Ekiti - Let The Light Shine">
+    <meta property="og:description" content="Nurturing the Intellect and Spirit at Apostolic Faith Secondary School">
+    <meta property="og:type" content="website">
+    <title>AFSS Ado-Ekiti &copy; 2024 | Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="properties of everthing.css">
-    <meta name="description" content="We prepare our Students with a cimmitment to academic achievement , and moral development
-    , we prepare or students to excel in their pursuits and contribute positively to the societyLET THE LIGHT SHINE">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<!-----------Small CSS-------------------->
-<style>
-        .title{
-            display: inline-block;
-            font-family: fantasy;
-            font-size: 14px;
-            font-weight: bolder;
-        }
-        .title::after{
-            content: '';
-            border-radius: 5px;
-            height: 3px;
-            background : radial-gradient(white, red);
-            display: block;
-            font-size: 15px;
-            margin: auto;
-        }
-        .text{
-            font-family: cursive;
-            font: lighter;
-            display: inline-block;
-            color: #000000;
-            margin-left: 3px;
-            font-size: 15px;
-        }
-        #end{
-            margin-left: 95px;
-        }
-    </style>
-</style>
 <body>
-<!-----------The part with background -------------------->
-<div class="header">
-    <nav>
-        <a href="index.html">
-            <img src="1688073295038-removebg-preview.png">
-        </a>
-        <div class="nav-links" id="navLinks">
-            <button class="nav-toggle nav-close" onclick="hideMenu()" aria-label="Close navigation menu">
-            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html" aria-label="AFSS Home">
+                <img src="1688073295038-removebg-preview.png" alt="AFSS School Logo" width="100" height="auto">
+            </a>
+            <div class="nav-links" id="navLinks" role="menu">
+                <button class="nav-toggle nav-close" onclick="hideMenu()" aria-label="Close navigation menu" aria-expanded="false">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <ul role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                    <li role="none"><a href="set-2024.html" role="menuitem">Elite Class 2k'24 &reg;</a></li>
+                    <li role="none"><a href="Developer.html" role="menuitem">Developer</a></li>
+                    <li role="none"><a href="login.html" role="menuitem">Accounts</a></li>
+                </ul>
+            </div>
+            <button class="nav-toggle nav-open" onclick="showMenu()" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about us.html">About</a></li>
-                <li><a href="Set 2024.html">Elite Class 2k'24 &reg;</a></li>
-            </ul>
-        </div>
-        <button class="nav-toggle nav-open" onclick="showMenu()" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </button>
-    </nav>
-</div>
-<!-----------Text in the middle-------------------->
-        <div class="text-box">
-            <h1>Apostolic Faith Secondary School Ado-&nbsp;Ekiti</h1>
-            <p>Nurturing the Intellect and Spirit, guiding students towards a bright future grounded in Faith and integrity  <br>(LET THE LIGHT SHINE)</p>
-            <a href="Set 2024.html"><button class="button-1">Explore Now &#8594;</button></a>
+        </nav>
+        
+        <main id="main-content">
+            <section class="text-box" aria-labelledby="school-heading">
+                <h1 id="school-heading">Apostolic Faith Secondary School Ado-Ekiti</h1>
+                <p>Nurturing the Intellect and Spirit, guiding students towards a bright future grounded in Faith and integrity<br>(LET THE LIGHT SHINE)</p>
+                <a href="set-2024.html"><button class="button-1">Explore Now &#8594;</button></a>
+            </section>
+        </main>
+        
+        <marquee direction="left" aria-label="Developer announcement">THE DEVELOPER OF THIS PROJECT IS AYOOLA DAMISILE <span class="smallest">THE CEO OF (ADAMS DEVELOPERS&copy; 2024)</span></marquee>
+    </header>
+    
+    <section class="Pro-Pri-Vp" aria-labelledby="officials-heading">
+        <h3 id="officials-heading">Few Officials</h3>
+        <div class="row" role="list">
+            <div class="col-4" role="listitem">
+                <img src="proprietor.jpg" alt="Rev (Prof.) Oba Fatoba - Proprietor">
+                <span class="title">Name: </span> <span class="text">Rev (Prof.) Oba Fatoba</span><br>
+                <span class="title">Portfolio: </span><span class="text">Proprietor</span><br>
+            </div>
+            <div class="col-4" role="listitem">
+                <img src="Principal.jpg" alt="Mr. Salawu Abraham - Principal">
+                <span class="title">Name: </span> <span class="text">Mr. Salawu Abraham</span><br>
+                <span class="title">Portfolio:</span><span class="text">Principal</span><br>
+            </div>
+            <div class="col-4" role="listitem">
+                <img src="master olamide.jpg" alt="Mr. Sola Olamide - Vice Principal">
+                <span class="title">Name: </span> <span class="text">Mr. Sola Olamide</span><br>
+                <span class="title">Portfolio: </span><span class="text">Vice Principal</span><br>
+            </div>
         </div>
     </section>
-<!-----------The Detais Principal, vice principal and Proprietor-------------------->
-    <div class="Pro-Pri-Vp">
-        <h3>Few Officials</h3>
-            <div class="row">
-        <div class="col-4">
-            <img src="proprietor.jpg">
-            <span class="title">Name: </span> <span class="text">Rev (Prof.) Oba Fatoba</span> <br>
-            <span class="title">Portfolio: </span><span class="text">Proprietor</span> <br>
-        </div>
-        <div class="col-4">
-            <img src="Principal.jpg" alt="">
-            <span class="title">Name: </span> <span class="text">Mr. Salawu Abraham </span> <br>
-            <span class="title">Portfolio:</span><span class="text">Principal</span> <br>
-        </div>
-        <div class="col-4">
-            <img src="master olamide.jpg" alt="">
-            <span class="title">Name: </span> <span class="text">Mr. Sola Olamide</span> <br>
-            <span class="title">Portfolio: </span><span class="text">Vice Principal</span> <br>
-        </div>
-    </div>
-        </div>
-    </div>
-    <a id="end" href="#"><button class="button-1">Back to top</button></a>
+    
+    <a href="#" class="back-to-top" aria-label="Back to top"><button class="button-1">Back to top</button></a>
 
-    <!--------javacript for toggle menu--------->
-<script defer>
-    var navLinks = document.getElementById("navLinks");
+    <script defer>
+        var navLinks = document.getElementById("navLinks");
+        var openButton = document.querySelector(".nav-open");
+        var closeButton = document.querySelector(".nav-close");
 
-    function showMenu(){
-        navLinks.classList.add("is-open");
-        var menuButton = document.querySelector(".nav-open");
-        if (menuButton) {
-            menuButton.setAttribute("aria-expanded", "true");
+        function showMenu(){
+            navLinks.classList.add("is-open");
+            if (openButton) {
+                openButton.setAttribute("aria-expanded", "true");
+            }
+            if (closeButton) {
+                closeButton.setAttribute("aria-expanded", "true");
+            }
         }
-    }
-    function hideMenu(){
-        navLinks.classList.remove("is-open");
-        var menuButton = document.querySelector(".nav-open");
-        if (menuButton) {
-            menuButton.setAttribute("aria-expanded", "false");
+        
+        function hideMenu(){
+            navLinks.classList.remove("is-open");
+            if (openButton) {
+                openButton.setAttribute("aria-expanded", "false");
+            }
+            if (closeButton) {
+                closeButton.setAttribute("aria-expanded", "false");
+            }
         }
-    }
-</script>
-
+        
+        // Close menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
+                hideMenu();
+                openButton.focus();
+            }
+        });
+    </script>
 </body>
-
 </html>

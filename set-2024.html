@@ -9,7 +9,7 @@
     <style>
         .title{
             display: inline-block;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: fantasy;
             font-size: 14px;
             color: black;
             font-weight: bolder;
@@ -21,7 +21,7 @@
             content: '';
             border-radius: 5px;
             height: 3px;
-            background: #1d4f91;
+            background: radial-gradient(blue, red);
             display: block;
             margin: auto;
         }
@@ -30,14 +30,14 @@
             background-size: cover;
         }
         .text{
-            font-family: 'Times New Roman', Times, serif;
+            font-family: cursive;
             font: bolder;
             display: inline-block;
-            color: #1b2f4d;
+            color: whitesmoke;
             margin-left: 3px;
         }
     </style>
-    <link rel="stylesheet" href="properties of everthing.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <!-----------Header, navbar and menu-------------------->
 <body>
@@ -49,8 +49,10 @@
             </button>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about us.html">About</a></li>
-                    <li><a href="Set 2024.html">Elite Class '24 &reg;</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="set-2024.html">Elite Class '24 &reg;</a></li>
+                    <li><a href="Developer.html">Developer</li></a>
+                    <li><a href="login.html">Accounts</a></li>
                 </ul>
             </div>
             <button class="nav-toggle nav-open" onclick="showMenu()" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">
@@ -69,7 +71,7 @@
             <img src="Jomiloju.jpg" id="card">
             <span class="title">Name: </span> <span class="text">Onipede Jomiloju</span> <br>
             <span class="title">Department: </span><span class="text">Science</span> <br>
-            <span class="title">Nickname: </span><span class="text">Jobs Jay </span> <br>
+            <span class="title">Nickname: </span><span class="text">Jobs Jay <span class="heart">&hearts; &hearts;</span></span> <br>
             <span class="title">Post Held:</span><span class="text">Senior Prefect Boy</span> <br>
             <span class="title">Contact Info:- </span><span class="text">09073461471</span>            
         </div>
@@ -77,7 +79,7 @@
             <img src="Devloper.jpg" id="card">
             <span class="title">Name: </span> <span class="text">Ayoola Damisile</span> <br>
             <span class="title">Department: </span><span class="text">Science</span> <br>
-            <span class="title">Nickname: </span><span class="text">Adams Romeo </span> <br>
+            <span class="title">Nickname: </span><span class="text">Adams Romeo <span class="heart">&hearts; &hearts;</span></span> <br>
             <span class="title">Post Held:</span><span class="text"> Asst. senior Prefect Boy</span> <br>
             <span class="title">Contact Info:- </span><span class="text">09073461471</span>            
         </div>
@@ -85,7 +87,7 @@
             <img src="IMG-20250916-WA0001.jpg" id="card">
             <span class="title">Name: </span> <span class="text">Ijasanmi Praise</span> <br>
             <span class="title">Department: </span><span class="text">Science</span> <br>
-            <span class="title">Nickname: </span><span class="text">Praise Beauty </span> <br>
+            <span class="title">Nickname: </span><span class="text">Praise Beauty <span class="heart">&hearts;</span></span> <br>
             <span class="title">Post Held:</span><span class="text">Senior Prefect Girl</span> <br>
             <span class="title">Contact Info:- </span><span class="text">...</span> 
         </div>
@@ -93,7 +95,7 @@
             <img src="Dorcas.jpg" id="card">
             <span class="title">Name: </span> <span class="text">Olowe Dorcas</span> <br>
             <span class="title">Department: </span><span class="text">Science</span> <br>
-            <span class="title">Nickname: </span><span class="text">GemDot </span> <br>
+            <span class="title">Nickname: </span><span class="text">GemDot <span class="heart">&hearts;</span></span> <br>
             <span class="title">Post Held:</span><span class="text">Asst. senior Prefect Girl</span> <br>
             <span class="title">Contact Info:- </span><span class="text">08140903859</span> 
         </div>
@@ -117,7 +119,7 @@
             <img src="Daniel.jpg">
             <span class="title">Name: </span> <span class="text">Ojo Daniel</span> <br>
             <span class="title">Department: </span><span class="text">Science</span> <br>
-            <span class="title">Nickname: </span><span class="text">Da ves </span> <br>
+            <span class="title">Nickname: </span><span class="text">Da ves <span class="heart">&hearts; &hearts;</span></span> <br>
             <span class="title">Post Held:</span><span class="text">Health Prefect Boy</span> <br>
             <span class="title">Contact Info:- </span><span class="text">07047820190</span> 
         </div>
@@ -133,7 +135,7 @@
             <img src="Damilare.jpg">
             <span class="title">Name: </span> <span class="text">Adeyeye Damilare </span> <br>
             <span class="title">Department: </span><span class="text">Science</span> <br>
-            <span class="title">Nickname: </span><span class="text">Omoluabi </span> <br>
+            <span class="title">Nickname: </span><span class="text">Omoluabi <span class="heart">&hearts;</span></span> <br>
             <span class="title">Post Held:</span><span class="text">Chapel Prefect Boy </span> <br>
             <span class="title">Contact Info:- </span><span class="text">...</span> 
         </div>
@@ -255,9 +257,9 @@
 
 <div class="page-btn">
     <a href="#"><button class="button-1">1</button></a>
-    <a href="Page 2.html"><button class="button-1">2</button></a>
-    <a href="Page 3 .html"><button class="button-1">3</button></a> 
-    <a href="Page 4.html"><button class="button-1">4</button></a></a>
+    <a href="page-2.html"><button class="button-1">2</button></a>
+    <a href="page-3.html"><button class="button-1">3</button></a> 
+    <a href="page-4.html"><button class="button-1">4</button></a></a>
     <a href="#"><button class="button-1">Back to top</button></a>
     <a id="button-1" href="index.html">
 </div>
